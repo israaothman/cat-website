@@ -9,13 +9,23 @@
 
 alert('welcome to our website');
 var input = prompt('Do you like cats or dogs ?');
-console.log(input);
-document.write('you like '+input)
+// console.log(input);
+// document.write('you like '+input)
 
-if(input == 'cats'){
-  alert('join the club')
-}else if (input=='dogs'){
-  alert('think again');
-}else{
-  alert('only cats or dogs')
+
+while(input != 'cats' && input!='dogs' ){
+  input = prompt('please answer with cats or dogs ONLY!!!!')
 }
+ 
+ var numOf = prompt('How many ' + input + ' do you want to see?');
+
+ for(var i=0; i< numOf ; i++){
+   if(input == 'cats'){
+   document.write('<img src="https://www.humanesociety.org/sites/default/files/styles/1441x612/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=MnaVHwPi" alt="cat">')
+ 
+}else if (input=='dogs'){
+   document.write('<img src="https://media.nature.com/lw800/magazine-assets/d41586-020-01430-5/d41586-020-01430-5_17977552.jpg" alt="dogs">')
+  
+}
+ }
+
